@@ -9,8 +9,6 @@
   filter:saturate(1.45) contrast(1.04);
 }
 .fencing-hero {
-  display:grid;
-  align-items:center;
   min-height:clamp(250px,24vw,320px);
   padding-block:32px;
   box-sizing:border-box;

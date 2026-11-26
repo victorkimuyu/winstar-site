@@ -1,8 +1,7 @@
 /* Compact service introductions, loaded after page styles. */
 .solutions-page .guarding-hero,.solutions-page .alarms-hero,.solutions-page .credential-hero{padding-block:48px 64px}
-.solutions-page section:first-child .page-breadcrumb{margin-bottom:20px}
 .solutions-page .guarding-hero h1,.solutions-page .alarms-hero h1,.solutions-page .credential-hero h1{font-size:clamp(30px,3.2vw,42px);line-height:1.08;margin-bottom:14px;letter-spacing:-.025em}
-.solutions-page .guarding-hero .guarding-standfirst,.solutions-page .alarms-hero-copy>p,.solutions-page .credential-hero p{font-size:18px;font-weight:300;line-height:1.4;max-width:39ch;margin:0 0 20px}
+.solutions-page .guarding-hero .guarding-standfirst,.solutions-page .alarms-hero-copy>p,.solutions-page .credential-hero p{font-size:18px;font-weight:300;line-height:1.4;max-width:39ch;margin:0}
 .solutions-page .guarding-hero figure{height:280px;aspect-ratio:auto}
 .solutions-page .guarding-hero figure img{display:block;width:100%;height:100%;object-fit:cover}
 .solutions-page .alarms-hero figure img{height:280px}
@@ -10,37 +9,34 @@
 .solutions-page .credential-flow h2{font-size:20px;margin-bottom:10px}
 .solutions-page .credential-flow li{padding-block:8px}
 .solutions-page .credential-flow span{margin-top:2px;font-size:13px}
-.solutions-overview-page .solutions-intro{padding-top:56px;padding-bottom:144px}
+.solutions-overview-page .solutions-intro{padding-block:48px calc(48px + var(--catalogue-overlap))}
 .solutions-overview-page .solutions-intro h1{font-size:clamp(32px,3.4vw,44px)}
-.solutions-overview-page .solutions-intro-grid p{font-size:17px;line-height:1.5;margin-bottom:16px}
+.solutions-overview-page .solutions-intro-grid p{font-size:17px;line-height:1.5}
 @media(max-width:760px){
 .solutions-page .guarding-hero,.solutions-page .alarms-hero,.solutions-page .credential-hero{padding-block:32px 48px}
 .solutions-page .guarding-hero-grid,.solutions-page .alarms-hero-grid,.solutions-page .credential-hero-grid{gap:24px}
 .solutions-page .guarding-hero figure,.solutions-page .alarms-hero figure img{height:220px;aspect-ratio:auto}
 .solutions-page .credential-flow{padding:18px 20px}
-.solutions-overview-page .solutions-intro{padding-top:36px;padding-bottom:112px}
+.solutions-overview-page .solutions-intro{padding-block:32px calc(32px + var(--catalogue-overlap))}
 }
 
 /* Security Guards and K9: full-width photographic heroes. */
-.solutions-page:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero{position:relative;isolation:isolate;overflow:hidden;min-height:440px;padding-block:48px 64px;background:var(--slate);color:#fff;border-radius:0;clip-path:none}
-:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero>.solutions-container{position:relative;z-index:1}
+.solutions-page:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero{position:relative;isolation:isolate;overflow:hidden;min-height:440px;padding-block:48px;background:var(--slate);color:#fff;border-radius:0;clip-path:none}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .guarding-hero-grid{display:block}
 .solutions-page:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero figure{position:absolute;inset:0;z-index:-2;width:100%;height:100%;margin:0;aspect-ratio:auto;clip-path:none;border-radius:0}
-:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero>.solutions-container{position:static}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero figure img{object-position:center 38%;border-radius:0}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(25,28,64,.88),rgba(25,28,64,.6) 42%,rgba(25,28,64,.08) 75%);pointer-events:none}
 .solutions-page:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero h1{color:#fff}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .page-breadcrumb{color:#fff}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .page-breadcrumb a:hover{color:var(--sky)}
-:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .guarding-hero-copy{max-width:490px;padding-top:24px}
+:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .guarding-hero-copy{max-width:490px}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .solutions-cta{color:var(--slate)}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .solutions-cta:is(:hover,:focus-visible){color:#fff}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero a:focus-visible{outline-color:var(--sky)}
 @media(max-width:760px){
-.solutions-page:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero{min-height:380px;padding-block:32px 48px}
+.solutions-page:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero{min-height:380px;padding-block:32px}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero figure img{object-position:65% center}
 :is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero:after{background:linear-gradient(90deg,rgba(25,28,64,.9),rgba(25,28,64,.65))}
-:is(.guarding-page,.k9-page,.access-hero-page,.aviation-page,.credential-page,.alarms-page,.events-page,.cctv-page,.escorts-page) .guarding-hero .guarding-hero-copy{padding-top:16px}
 }
 
 .k9-page .k9-hero figure img{object-position:70% center}
@@ -63,20 +59,22 @@
 .alarms-page .guarding-hero figure img{object-position:65% 49%}
 @media(max-width:760px){.alarms-page .guarding-hero figure img{object-position:72% center}}
 
-.events-page .guarding-hero figure img{object-position:center}
-@media(max-width:760px){.events-page .guarding-hero figure img{object-position:80% center}}
-
 /* Focal points for the November photographic replacements. */
-.guarding-page .guarding-hero figure img{object-position:74% 18%}
+.guarding-page .guarding-hero figure img{object-position:86% 32%}
 .cctv-page .guarding-hero figure img{object-position:76% 35%}
 .k9-page .guarding-hero figure img{object-position:78% 40%}
 .escorts-page .guarding-hero figure img{object-position:66% 30%}
-@media(max-width:760px){.guarding-page .guarding-hero figure img{object-position:76% 20%}.cctv-page .guarding-hero figure img{object-position:77% center}.k9-page .guarding-hero figure img{object-position:80% center}.escorts-page .guarding-hero figure img{object-position:56% center}}
+@media(max-width:760px){.guarding-page .guarding-hero figure img{object-position:88% 36%}.cctv-page .guarding-hero figure img{object-position:77% center}.k9-page .guarding-hero figure img{object-position:80% center}.escorts-page .guarding-hero figure img{object-position:81% center}}
 
-/* Event entrance: text left, staff and guest interaction right. */
-.events-page .guarding-hero figure img{object-position:75% center}
+/* Keep the golfer at the foot of the wide crop and the guard centred on phones. */
+.events-page .guarding-hero figure img{object-position:center bottom}
 .events-page .guarding-hero .guarding-hero-copy{margin-left:0}
 .events-page .guarding-hero .page-breadcrumb{justify-content:flex-start}
 .events-page .guarding-hero:after{background:rgba(25,28,64,.6)}
-.solutions-page.events-page .guarding-hero figure img{object-fit:cover;object-position:70% center;transform:scale(1.08);transform-origin:70% center}
-@media(max-width:760px){.events-page .guarding-hero:after{background:rgba(25,28,64,.6)}}
+@media(min-width:761px){
+  .solutions-page.events-page .guarding-hero{min-height:max(440px,30vw)}
+}
+@media(max-width:760px){
+  .events-page .guarding-hero figure img{object-position:center}
+  .events-page .guarding-hero:after{background:rgba(25,28,64,.6)}
+}

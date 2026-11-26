@@ -3,9 +3,9 @@
 .solutions-container{width:90%;max-width:1296px;margin-inline:auto}
 .solutions-intro{background:#f4f5f7;padding:70px 0 64px;border-bottom:1px solid #e6e7ec}
 .solutions-eyebrow{font-size:11px;font-weight:700;letter-spacing:1.6px;margin:0 0 22px;color:var(--blue)}
-.solutions-intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:end}
+.solutions-intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
 .solutions-intro h1{font-size:clamp(36px,4.2vw,54px);font-weight:300;line-height:1.08;letter-spacing:-1.5px;margin:0;color:var(--slate)}
-.solutions-intro-grid p{font-size:17px;line-height:1.7;margin:0 0 22px;max-width:540px}
+.solutions-intro-grid p{font-size:17px;line-height:1.7;margin:0;max-width:540px}
 .solutions-text-link{text-decoration:none;font-size:14px;font-weight:500;display:inline-flex;gap:24px;align-items:center}
 .solutions-text-link:hover{color:var(--red)}
 .solutions-catalogue{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;padding-block:64px 80px;scroll-margin-top:24px}
@@ -47,8 +47,31 @@
 @media(prefers-reduced-motion:reduce){.solutions-cta:before{transition:none}}
 
 /* Shared internal-page language: clear titles and restrained evidence panels. */
-.page-breadcrumb{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;line-height:1.6;margin-bottom:36px;color:#626278}
+.page-breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;line-height:1.6;margin-bottom:36px;color:#626278}
+.page-breadcrumb > svg{flex:none;stroke-width:1.8}
 .page-breadcrumb a{text-decoration:none}.page-breadcrumb a:hover{color:var(--red)}
+
+:is(.guarding-hero, .fencing-hero, .contact-intro, .sectors-intro) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Keep the breadcrumb near the top and balance the space on both sides of the copy. */
+:is(.guarding-hero, .fencing-hero, .contact-intro, .sectors-intro, .solutions-intro) > .solutions-container,
+.company-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(auto, 1fr) auto minmax(0, 1fr);
+}
+
+.solutions-page .page-breadcrumb {
+  align-self: start;
+  margin-bottom: 12px;
+}
+
+.guarding-hero-copy > .guarding-standfirst {
+  margin-bottom: 0;
+}
 .page-title-support{display:block;font-size:clamp(24px,2.5vw,32px);line-height:1.25;letter-spacing:-.4px;margin-top:18px;max-width:400px}
 .solution-photo img{object-position:center 35%}.solution-card:last-child .solution-photo img{object-position:center 65%}
 .service-row-arrow{flex-shrink:0}.solutions-text-link img{flex-shrink:0}
@@ -93,8 +116,9 @@
 @media(max-width:760px){.guarding-hero-grid,.scope-grid,.settings-grid,.delivery-grid{grid-template-columns:1fr;gap:32px}.guarding-hero{padding:28px 0 40px}.guarding-hero figure{height:360px}.delivery-band{padding:44px 0}.delivery-pillars{grid-template-columns:1fr;gap:24px;margin-top:30px}.service-section{padding-block:44px}.page-breadcrumb{margin-bottom:28px}.service-section-nav>div{gap:12px 24px}.delivery-heading{padding-left:20px}.solutions-cta{white-space:normal}.solutions-cta img{flex-shrink:0}}
 
 /* Solutions overview: overlapping catalogue and contrasting FAQ panel. */
-.solutions-overview-page .solutions-intro{padding-bottom:144px;border-bottom:0}
-.solutions-overview-page .solutions-catalogue{position:relative;z-index:1;margin-top:-80px;padding-top:0;padding-bottom:0}
+.solutions-overview-page{--catalogue-overlap:80px}
+.solutions-overview-page .solutions-intro{border-bottom:0}
+.solutions-overview-page .solutions-catalogue{position:relative;z-index:1;margin-top:calc(-1 * var(--catalogue-overlap));padding-top:0;padding-bottom:0}
 .solutions-overview-page .solutions-faq{background:var(--slate);color:#fff}
 .solutions-overview-page .solutions-faq h2{color:var(--sky)}
 .solutions-overview-page .solutions-faq .solutions-eyebrow,
@@ -102,8 +126,7 @@
 .solutions-overview-page .solutions-questions details{border-color:rgba(255,255,255,.4)}
 .solutions-overview-page .solutions-questions summary:focus-visible{outline-color:#fff}
 @media(max-width:760px){
-.solutions-overview-page .solutions-intro{padding-bottom:92px}
-.solutions-overview-page .solutions-catalogue{margin-top:-48px;padding-top:0}
+.solutions-overview-page{--catalogue-overlap:48px}
 }
 
 /* Solid intro surface gives the overlapping photographs a clear backdrop. */

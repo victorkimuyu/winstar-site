@@ -57,24 +57,11 @@
 .credential-mobile-photo-space { grid-row: 2; }
 .solutions-page.credential-page .guarding-hero {
   grid-row: 1;
-  display: flex;
-  align-items: stretch;
   min-height: 360px;
   padding-block: 28px;
   overflow: visible;
   background: transparent;
 }
-.credential-page .guarding-hero > .solutions-container {
-  display: flex;
-  flex-direction: column;
-}
-.credential-page .guarding-hero .guarding-hero-grid {
-  display: flex;
-  flex: 1;
-  align-items: center;
-}
-.credential-page .guarding-hero .guarding-hero-copy { padding-top: 0; }
-.credential-page .guarding-hero .page-breadcrumb { margin-bottom: 20px; }
 
 .credential-page .guarding-hero::after {
   bottom: calc(-1 * var(--credential-underlap));

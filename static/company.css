@@ -6,7 +6,7 @@
     var(--blue) url("images/about-winstar-officer.jpg") var(--photo-position) / cover no-repeat;
   color:white;
 }
-.company-hero { padding-block:clamp(48px,6vw,86px) clamp(56px,7vw,104px) }
+.company-hero { padding-block:clamp(38px,5.3vw,76px) }
 .company-hero .page-breadcrumb { color:white }
 .company-page .company-hero h1 { color:#fff;font-size:clamp(46px,6vw,84px);font-weight:400;line-height:1.04;letter-spacing:-.04em;margin:0 0 24px }
 .company-hero .company-lead { max-width:32ch;font-size:clamp(20px,2vw,29px);line-height:1.32;margin:0;padding-left:18px;border-left:4px solid var(--red);text-wrap:pretty }
@@ -49,5 +49,5 @@
     background-size:100% max(320px,65vw),100% max(320px,65vw),auto max(320px,65vw);
     background-repeat:no-repeat;
   }
-  .company-hero { padding-block:62px }
+  .company-hero { padding-block:46px }
 }

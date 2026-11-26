@@ -163,7 +163,7 @@ main.home-main{max-width:none;margin:0;padding:0}
 .client-marquee-label{text-align:left}
 
 /* Final homepage panel: testimonial drafts awaiting approved quotes. */
-.testimonials-panel{background:#f3f2f6;padding:64px 5% 76px}
+.testimonials-panel{display:none;background:#f3f2f6;padding:64px 5% 76px}
 .testimonials-inner{max-width:1296px;margin:auto}
 .testimonials-kicker{font-size:11px;letter-spacing:1.6px;font-weight:700;color:var(--blue);margin:0 0 12px}
 .testimonials-panel h2{font-size:clamp(26px,2.6vw,36px);line-height:1.2;font-weight:600;color:var(--navy);margin:0 0 14px}

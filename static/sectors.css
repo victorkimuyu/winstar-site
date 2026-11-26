@@ -4,7 +4,7 @@
     linear-gradient(var(--sectors-overlay), var(--sectors-overlay)),
     var(--slate) url("images/slider/corporate-building.jpg") left 57% / max(195%, 960px) auto no-repeat;
   color: #fff;
-  padding-block: clamp(44px, 6vw, 84px);
+  padding-block: clamp(32px, 4.5vw, 70px);
 }
 
 .sectors-intro .page-breadcrumb { color: #e8e9f0; }

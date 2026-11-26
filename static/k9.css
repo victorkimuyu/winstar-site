@@ -18,10 +18,6 @@
   mask-image: linear-gradient(to bottom, #000 calc(100% - var(--k9-photo-underlap)), transparent);
 }
 
-.k9-page .k9-hero .guarding-hero-copy {
-  padding-top: clamp(30px, 5vw, 72px);
-}
-
 .k9-roles {
   position: relative;
   padding-top: var(--k9-roles-top-padding);
@@ -128,17 +124,16 @@
     transform: translateY(-50%) rotate(90deg);
   }
   .k9-roles-intro h2, .k9-faq h2 { max-width: none; }
-  .solutions-page.k9-page .k9-hero { min-height: 0; padding-bottom: 0; }
-  .k9-page .k9-hero .guarding-hero-copy { padding: 12px 0 28px; }
+  .solutions-page.k9-page .k9-hero { min-height: 0; padding-block: 0; }
+  .k9-page .k9-hero > .solutions-container { padding-block: 28px; }
   .solutions-page.k9-page .k9-hero figure {
     position: relative;
     inset: auto;
     z-index: 0;
-    width: calc(100% / .9);
+    width: 100%;
     height: auto;
     overflow: visible;
     aspect-ratio: 1.65;
-    margin-inline: -5.5556%;
   }
   .solutions-page.k9-page .k9-hero figure img {
     position: absolute;

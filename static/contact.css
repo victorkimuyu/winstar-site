@@ -1,6 +1,4 @@
 .contact-intro{
-  display:grid;
-  align-items:center;
   min-height:clamp(300px,29vw,420px);
   box-sizing:border-box;
   padding-block:40px;
@@ -55,9 +53,8 @@
 @media(max-width:760px){.contact-grid{grid-template-columns:1fr}.contact-intro,.contact-page .service-section{padding-block:36px}.contact-intro p{font-size:18px}}
 @media(max-width:600px){
   .contact-intro{
-    align-items:end;
     min-height:380px;
-    background:linear-gradient(0deg,#151b30 10%,rgba(21,27,48,.93) 35%,rgba(21,27,48,.24) 67%,transparent 85%),
+    background:linear-gradient(0deg,#151b30 10%,rgba(21,27,48,.88) 55%,rgba(21,27,48,.68) 73%,rgba(21,27,48,.35)),
       url("images/services/control-room-refined-anonymous.webp") right top / auto 76% no-repeat,#151b30;
   }
   .contact-intro p{max-width:36ch}
