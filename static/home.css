@@ -236,5 +236,5 @@ main.home-main{max-width:none;margin:0;padding:0}
 /* Winstar photographic slider: retain subject placement through the zoom. */
 .hero-slide:nth-child(1) .hero-image{object-position:74% 42%;transform-origin:74% 42%}
 .hero-slide:nth-child(2) .hero-image{object-position:66% 55%;transform-origin:66% 55%}
-.hero-slide:nth-child(3) .hero-image{object-position:65% 54%;transform-origin:65% 54%}
-@media(max-width:600px){.hero-slide:nth-child(1) .hero-image{object-position:75% center}.hero-slide:nth-child(2) .hero-image{object-position:48% center}.hero-slide:nth-child(3) .hero-image{object-position:49% center}}
+.hero-slide:nth-child(3) .hero-image{object-position:72% 33%;transform-origin:72% 33%}
+@media(max-width:600px){.hero-slide:nth-child(1) .hero-image{object-position:75% center}.hero-slide:nth-child(2) .hero-image{object-position:48% center}.hero-slide:nth-child(3) .hero-image{object-position:76% center;transform-origin:76% center}}
